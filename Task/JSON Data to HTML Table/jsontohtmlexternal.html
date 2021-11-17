@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Data to Table in HTML Demo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="customerdata.json"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="fetchapi.js"></script>
+    <style>
+        th {
+            background-color: gray;
+            color: whitesmoke;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="displayJSON"></div>
+    
+    <div id="imgdiv"></div>
+</body>
+
+<script>
+    window.onload = function() {
+        var URL = "customerdata.json";
+        customerData = fetchData(URL);
+    }
+    /*window.onload = function () {
+        var customerData = JSON.parse();
+        document.getElementById('test').innerHTML = JSON.stringify(customerData);
+
+        var tableData = [];
+        for (var i = 0; i < customerData.length; i++) {
+            for (var key in customerData[i]) {
+                if (tableData.indexOf(key) === -1) {
+                    tableData.push(key);
+                }
+            }
+        }
+
+        var jsonTable = document.createElement("table");
+        jsonTable.classList.add("responsive-table", "highlight");
+        jsonTable.style.wordWrap = "break-word";
+
+        var tr = jsonTable.insertRow(-1); 
+
+        for (var i = 0; i < tableData.length; i++) {
+            var th = document.createElement("th");
+            th.innerHTML = tableData[i];
+            tr.appendChild(th);
+        }
+        
+        for (var i = 0; i < customerData.length; i++) {
+            tr = jsonTable.insertRow(-1);
+
+            for (var j = 0; j < tableData.length; j++) {
+                var tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = customerData[i][tableData[j]];
+            }
+        }
+        var divContainer = document.getElementById("displayJSON");
+        divContainer.innerHTML = "";
+        divContainer.appendChild(jsonTable);
+    }*/
+</script>
+</html>

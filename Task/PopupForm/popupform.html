@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Popup Form Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+    <header>
+        <div class="d-flex alertBanner" data-toggle="modal" data-target="#popupForm" style="text-align: center;">
+            <p class="displayForm text-center">Post covid Vaccination Assessment &emsp;<strong>Read More</strong></p>
+        </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Silver Connections</a></li>
+                    <li><a href="#">News & Media</a></li>
+                    <li><a href="#">Patient Portal</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+ 
+    <!-- Modal -->
+    <div class="modal fade" id="popupForm" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header popTitle">
+                    <button type="button" class="close" data-dismiss="modal"><span style="color: white;">&#10006;</span></button>
+                    <h4 class="modal-title">Post Covid Vaccination Assessment </h4>
+                </div>
+                <div class="modal-body">
+                    <h4>Book an appointment</h4>
+                    <hr>
+                    <form>
+                        <div class="form-row">
+                            <div>
+                                <div class="form-group col-md-6">
+                                    <label>YOUR NAME *</label>
+                                    <input type="text" class="form-control" id="txrFname">
+                                    <label for="txrFname">First</label>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>&nbsp;</label>
+                                    <input type="text" class="form-control" id="txrLname">
+                                    <label for="txrLname">Last</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="txrFname">YOUR EMAIL *</label>
+                                <input type="text" class="form-control" id="txrFname">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="txrLname">YOUR PHONE</label>
+                                <input type="text" class="form-control" id="txrLname">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="txrFname">PHONE NUMBER PROVIDED: *</label>
+                                <div>
+                                    <input type="radio" id="cell" name="contact" value="Cell"> Cell / Mobile <br>
+                                    <input type="radio" id="home" name="contact" value="Home"> Home Phone
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="txrLname">COMMENTS OR CONCERNS</label>
+                                <textarea id="notes" class="form-control" name="notes" rows="3" cols="40"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <div class="g-recaptcha " data-sitekey="6Le0pzsdAAAAAC08AzcU3ujZC3Kipu-Yp3L6MkOY"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group btnsubmit">
+                                <button type="" class="btn btn-outline-primary px-3">Send Message</button>
+                            </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <section class="masthead">
+        <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+            <h1 class="fw-light">Some Content</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis
+                blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat
+                reprehenderit expedita.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Page Content -->
+    <section class="py-5">
+        <div class="container">
+        <h2 class="fw-light">Page Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis
+            blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat
+            reprehenderit expedita.</p>
+        </div>
+    </section>
+
+</body>
+</html>

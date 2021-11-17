@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Check if String starts with 'Java'</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <h1>Open console window of the browser by pressing 'f12' or 'fn + f12' button to get the output of this program.</h1>
+    <script>
+        function beginStrCheck(str) {
+            if (str.length < 4)
+                return false;
+            var checkStr = str.substring(0, 4);
+            if (checkStr == 'Java') 
+                return true;
+            else 
+                return false;
+        }
+        console.log(beginStrCheck("Java"));
+        console.log(beginStrCheck("JavaScript"));
+        console.log(beginStrCheck("C#"));
+    </script>
+</body>
+</html>

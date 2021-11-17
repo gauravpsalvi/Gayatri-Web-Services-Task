@@ -1,0 +1,71 @@
+.masthead {
+    height: 80vh;
+    min-height: 300px;
+    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar, .alert {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.popTitle {
+    background-color: darkblue;
+    color: white;
+}
+
+.btnsubmit {
+    padding-left: 15px;
+}
+
+.btn-outline-primary {
+    color: #0d6efd;
+    border-color: #0d6efd;
+    background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    border-color: #0d6efd;
+    background-color: #0d6efd;
+}
+
+.modal {
+    top: 8%;
+}
+
+label {
+    font-weight: 100;
+}
+
+.displayForm {    
+    align-items: center;
+    width: 100%;
+}
+
+.displayForm::before {
+    border: 1px solid #b08a91;
+    margin-right: 15px;
+    border-radius: 50%;
+    padding: 4px 10px; 
+    content: '!';
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.alertBanner {
+    background-color: #7a111f;
+    color: #b08a91;
+    padding: 10px;
+    border: 1px solid #7a111f;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    margin: 0;
+}

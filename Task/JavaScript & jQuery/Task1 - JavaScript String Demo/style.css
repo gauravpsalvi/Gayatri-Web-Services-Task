@@ -1,0 +1,27 @@
+div {
+    padding: 10px 0;
+}
+
+h1 {
+    color: brown;
+}
+
+img {
+    display: block;
+    position: absolute;
+    left: 39.65%;
+    height: 300px;
+    width: 390px;
+    border: 5px solid black;
+    -webkit-box-shadow: 0 0 5px 2px grey;
+    -moz-box-shadow: 0 0 5px 2px grey;
+    box-shadow: 0 0 5px 5px grey;
+}
+
+.buttons {
+    display: block;
+    align-content: left;
+    position: absolute;
+    left: 41.6%;
+    top: 42%;
+}
